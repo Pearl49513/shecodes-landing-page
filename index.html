@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passion for Pixel Art!</title>
+
+    <style>
+      body {
+        background: linear-gradient(
+          107.56deg,
+          rgba(240, 165, 19, 0.2) 0%,
+          rgba(3, 2, 0, 0.2) 100%
+        );
+        text-align: center;
+      }
+      img.pixel-cup {
+        width: 350px;
+        height: 260px;
+        display: block;
+        margin: 0px auto;
+      }
+      h1 {
+        line-height: 42px;
+        font-weight: bold;
+        font-family: Copperplate, Papyrus, fantasy;
+        text-decoration: underline dotted 1px;
+      }
+      h2 {
+        line-height: 32px;
+        font-size: 38px;
+        font-family: "Brush Script MT", cursive;
+        text-decoration: underline dotted 1px;
+      }
+
+      p.first-Paragraph {
+        border-style: groove;
+        width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 24px;
+      }
+      strong.first-Paragraph {
+        color: #d63447;
+        text-decoration: underline dotted 1px;
+      }
+      a {
+        color: #d63447;
+        text-decoration: none;
+      }
+      a:hover {
+        color: red;
+        text-decoration: underline overline;
+      }
+
+      .subheading-Two {
+        color: #d63447;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 20px;
+        margin: 10px;
+        text-decoration: underline dotted 1px;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        border: dashed;
+        border-color: #d63447;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 10px 90px;
+        margin: 30px;
+        background-color: rgba(198, 164, 101, 0.3);
+      }
+      img.pixel-Animation {
+        width: 300px;
+        height: 300px;
+      }
+      a.pixel-Animation {
+        color: #d63447;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 10px 50px;
+        border: 2px dotted #d63447;
+      }
+
+      a.pixel-Animation:hover {
+        text-decoration: underline;
+        color: black;
+      }
+      img.pixel-Game {
+        width: 300px;
+        height: 300px;
+      }
+      a.pixel-Game {
+        color: #d63447;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 10px 50px;
+        border: 2px dotted #d63447;
+      }
+      a.pixel-Game:hover {
+        text-decoration: underline;
+        color: black;
+      }
+      .subheading-Three {
+        color: #d63447;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 20px;
+        text-decoration: underline dotted 1px;
+      }
+      img.pixel-Coding {
+        height: 200px;
+        width: 300px;
+      }
+      a.pixel-Coding {
+        color: #d63447;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 10px 50px;
+        border: 2px dotted #d63447;
+      }
+      a.pixel-Coding:hover {
+        text-decoration: underline;
+        color: black;
+      }
+
+      .subheading-Four {
+        border: 1px hidden #000000;
+        width: 510px;
+        height: 50px;
+        margin: 40px auto;
+        color: #000000;
+        font-size: 32px;
+        font-style: normal;
+        font-family: serif;
+        font-weight: 1000;
+        line-height: 42px;
+        text-align: center;
+        border-radius: 28px;
+        padding: 10px 0px 0px 0px;
+        position: relative;
+        isolation: isolate;
+      }
+
+      .subheading-Four::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/556/original/AdobeStock_395535317.jpeg?1663626104);
+        opacity: 30%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 28px;
+      }
+
+      img.swordmen {
+        height: 150px;
+        margin-right: 30px;
+      }
+      img.mage {
+        height: 150px;
+        margin-bottom: 80px;
+      }
+      img.archer {
+        height: 150px;
+        margin-left: 30px;
+      }
+
+      button {
+        background: #ff7a7a;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: serif;
+        font-style: italic;
+        color: #ffffff;
+        line-height: 24px;
+        width: 230px;
+        padding: 5px;
+        border: 3px solid #000000;
+        border-radius: 43px;
+        box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.64);
+        margin: 30px;
+        display: inline-block;
+      }
+      button:hover {
+        background: #ffffff;
+        font-weight: bold;
+        font-size: 18px;
+        color: #ff7a7a;
+        transition: 500ms ease-in-out;
+      }
+      button:active {
+        color: lavender;
+      }
+      em {
+        font-family: serif;
+        font-weight: bold;
+      }
+      .credits {
+        display: block;
+        line-height: 24px;
+      }
+      a.spriteSheetLink {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      a.spriteSheetLink:hover {
+        text-decoration: underline;
+        font-style: italic;
+        color: #d63447;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/674/original/AdobeStock_313107669.png?1663776755"
+      alt="Cup"
+      class="pixel-cup"
+    />
+    <!--<br />-->
+    <h1>The Study of Pixels</h1>
+    <h2>Pixel History</h2>
+    <!--<br />-->
+    <p class="first-Paragraph">
+      <strong class="first-Paragraph"
+        >Pixel games has a long existing history since the 1970’s!</strong
+      >
+      This little tiny dot creates the first video game called Pong which was
+      released in the 1970's. Pixel art have created so many pixel games
+      including old-school Roleplaying Games and 2-D fighting games. Back in the
+      day the first pixel art was created in embroidery but the word pixel was
+      added ias a dictionary term by Fred C. Billingsley in the 1960's
+      <br />
+      <br />
+      To learn more about the history of pixels, check
+      <a href="https://en.wikipedia.org/wiki/Pixel_art" target="_blank"
+        >Wikipedia</a
+      >
+      or this site when you click
+      <a href="https://pixelation.org/index.php?topic=19575.0" target="_blank"
+        >here</a
+      >!
+    </p>
+    <br />
+    <div class="subheading-Two">Come Check Out Some Pixel Art Creations!</div>
+
+    <ul>
+      <li>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/557/original/Assignment_40158.png?1663626124"
+          alt="Pixel Animation"
+          class="pixel-Animation"
+        />
+        <p>
+          <a
+            href="https://pearl49513.wixsite.com/dcasey-graphicdesign/nan-and-daisy-pixel-bit"
+            target="_blank"
+            class="pixel-Animation"
+            >Pixel Bit Animation</a
+          >
+        </p>
+      </li>
+      <li>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/555/original/MainCharacter.gif?1663626088"
+          alt="Pixel Game"
+          class="pixel-Game"
+        />
+        <p>
+          <a
+            href="https://pearl49513.wixsite.com/dcasey-3d-design/guardian-quest"
+            target="_blank"
+            class="pixel-Game"
+            >2-D Pixel Game</a
+          >
+        </p>
+      </li>
+    </ul>
+    <br />
+    <div class="subheading-Three">
+      Not My Art Assets But Trying To Test Out Coding A Pixel RPG Game!
+    </div>
+    <ul>
+      <li>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/689/original/PokemonfarmPowerPointBeginning%28cropped%29.png?1663829345"
+          alt="Pixel coding"
+          class="pixel-Coding"
+        />
+        <p>
+          <a
+            href="https://pearl49513.wixsite.com/dcasey-3d-design/pokefarm"
+            target="_blank"
+            class="pixel-Coding"
+            >C# Coding for Pixel RPG's</a
+          >
+        </p>
+      </li>
+    </ul>
+    <br />
+    <div class="subheading-Four">Which RPG Character Are You?</div>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/559/original/Download73019-1.png?1663626179"
+      alt="Swordmen"
+      class="swordmen"
+      id="swordmen"
+    />
+    <span id="swordmenDesc"> </span>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/560/original/Download6058-1.png?1663626187"
+      alt="Mage"
+      class="mage"
+      id="mage"
+    />
+    <span id="mageDesc"> </span>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/561/original/Download13189-1.png?1663626197"
+      alt="Archer"
+      class="archer"
+      id="archer"
+    />
+    <span id="archerDesc"> </span>
+
+    <br />
+
+    <button>Take the Quiz Now!</button>
+    <hr />
+
+    <p class="credits">
+      <em><span style="color: #d63447">This page is created by:</span></em>
+      <br />Dahlia Casey
+    </p>
+
+    <p class="credits">
+      <em
+        ><span style="color: #d63447"
+          >Art Sprites created and credit to:</span
+        ></em
+      ><br />
+      Stephen Challener (Redshrike), Johannes Sjölund (wulax)
+    </p>
+
+    <p class="credits">
+      <em><span style="color: #d63447">Website:</span></em
+      ><a
+        href="https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/#?body=Humanlike_white"
+        target="blank"
+        class="spriteSheetLink"
+        ><br />
+        https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/</a
+      >
+    </p>
+
+    <script>
+      function startQuiz() {
+        let test = prompt("What is your name?");
+        let random = prompt("Pick a number from 0-2!");
+        const swordmen = document.getElementById("swordmen");
+        const mage = document.getElementById("mage");
+        const archer = document.getElementById("archer");
+        const swordmenDesc = document.getElementById("swordmenDesc");
+        const mageDesc = document.getElementById("mageDesc");
+        const archerDesc = document.getElementById("archerDesc");
+        let warning = alert(
+          "Sike! You thought that this was a quiz!\nBut I'ma choose your character by random!"
+        );
+
+        if (
+          test.match(/a/g) ||
+          test.match(/d/g) ||
+          test.match(/g/g) ||
+          test.match(/j/g) ||
+          test.match(/m/g) ||
+          test.match(/p/g) ||
+          test.match(/s/g) ||
+          test.match(/v/g) ||
+          test.match(/y/g) ||
+          (random > 1 && swordmenDesc.innerHTML === "")
+        ) {
+          mage.style.display = "none";
+          archer.style.display = "none";
+          swordmen.style.display = "inline-block";
+          swordmen.style.margin = 0;
+          swordmenDesc.style.margin = 0;
+          swordmenDesc.innerHTML =
+            "<p style= line-height:32px;font-weight:bold;font-style:italic><strong style= color:blue;font-size:32px;font-style:normal>You are an Swordmen!</strong></br>Swordmen are very strong and brave.<br />They take their skills to the next level head on to their enemies.</p>";
+
+          mageDesc.style.display = "none";
+          archerDesc.style.display = "none";
+          swordmenDesc.style.display = "block";
+        } else {
+          if (
+            test.match(/b/g) ||
+            test.match(/e/g) ||
+            test.match(/h/g) ||
+            test.match(/k/g) ||
+            test.match(/n/g) ||
+            test.match(/q/g) ||
+            test.match(/t/g) ||
+            test.match(/w/g) ||
+            test.match(/z/g) ||
+            (random < 1 && mageDesc.innerHTML === "")
+          ) {
+            swordmen.style.display = "none";
+            archer.style.display = "none";
+            mage.style.display = "inline-block";
+            mage.style.margin = 0;
+            mageDesc.style.margin = 0;
+            mageDesc.innerHTML =
+              "<p style= line-height:32px;font-weight:bold;font-style:italic><strong style= color:violet;font-size:32px;font-style:normal>You are an Mage!</strong></br>Mages are very wise and intelligent.<br />They are the type to study and focus on the offense.</p>";
+
+            swordmenDesc.style.display = "none";
+            archerDesc.style.display = "none";
+            mageDesc.style.display = "block";
+          } else {
+            swordmen.style.display = "none";
+            mage.style.display = "none";
+            archer.style.display = "inline-block";
+            archerDesc.innerHTML =
+              "<p style= line-height:32px;font-weight:bold;font-style:italic><strong style= color:green;font-size:32px;font-style:normal>You are an Archer!</strong></br>Archers have strong eye cordination skills.<br />They can take on any task as long as they hide in the shadows!</p>";
+
+            mageDesc.style.display = "none";
+            swordmenDesc.style.display = "none";
+            archerDesc.style.display = "block";
+            archerDesc.style.margin = 0;
+            archer.style.margin = 0;
+          }
+        }
+      }
+      let quizButton = document.querySelector("button");
+      quizButton.addEventListener("click", startQuiz);
+    </script>
+  </body>
+</html>
